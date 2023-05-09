@@ -1,0 +1,22 @@
+.container{
+    width: 75%;
+    margin: auto;
+}
+.redCircle{
+    border-radius: 50px;
+    background-image: radial-gradient(50% 50% at 50% 50%, #F50B8A 0%, rgba(245, 11, 138, 0) 100%);
+    height: 50px;
+    width: 50px;
+}
+.greenCircle{
+    border-radius: 50px;
+    background: radial-gradient(50% 50% at 50% 50%, #0F7A26 0%, rgba(15, 122, 38, 0) 100%);
+    height: 70px;
+    width: 70px;
+}
+.vw{
+    height: 100vh;
+}
+.largeText{
+    font-size: 4rem;
+}

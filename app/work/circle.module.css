@@ -1,0 +1,6 @@
+.container{
+    border-radius: 50px;
+    background-image: radial-gradient(50% 50% at 50% 50%, #F50B8A 0%, rgba(245, 11, 138, 0) 100%);
+    height: 50px;
+    width: 50px;
+}

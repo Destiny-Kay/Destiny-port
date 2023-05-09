@@ -1,0 +1,52 @@
+
+.container{
+    justify-content: center;
+    width: 75%;
+    margin: auto;
+}
+.gradientBorder{
+    border-radius: 30px;
+    background: linear-gradient(#0A192F, #0A192F) padding-box, 
+    linear-gradient(87.24deg, 
+        #00A8BD 2.95%,
+        rgba(47, 234, 54, 0.63) 42.38%, 
+        rgba(248, 15, 15, 0.53) 71.69%, 
+        rgba(0, 0, 0, 0) 100%), 
+        linear-gradient(0deg, rgba(245, 245, 245, 0),
+        rgba(245, 245, 245, 0));
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 30px;
+    height: fit-content;
+    width: 100%;
+    padding: 3px;
+    margin: auto;  
+}
+
+.buttonTopRight{
+    position: absolute;
+    right: 10%;
+    top: 10%;
+}
+.marginTop30{
+    margin-top: 5%;
+}
+.divContent{
+    margin: 2%;
+}
+.centerContent{
+    margin: auto;
+}
+
+/*PREVIOUS CONTENT*/
+.prevContent{
+    background: linear-gradient(#0A192F, #0A192F) padding-box, 
+    linear-gradient(87.24deg, 
+        #00A8BD 2.95%,
+        rgba(47, 234, 54, 0.63) 42.38%, 
+        rgba(248, 15, 15, 0.53) 71.69%, 
+        rgba(0, 0, 0, 0) 100%, 
+        rgba(245, 245, 245, 0)
+    );
+}
