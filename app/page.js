@@ -15,7 +15,7 @@ export default function Home() {
         </div>
         <div className={`${styles.herosection}`}>
           <h2 className={`${styles.herotextSmall}`}>
-            Let's uncover how
+            Let&apos;s uncover how
           </h2>
           <h1 className={`${styles.herotextLarge}`}>DESIGN THINKING</h1>
           <h2 className={`${styles.herotextSmall}`}>can change the way we see the world</h2>

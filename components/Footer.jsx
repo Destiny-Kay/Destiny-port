@@ -6,8 +6,8 @@ export default function Footer(){
     return(
         <>
         <div> 
-            <Image />
-            <Image />
+            <Image alt=""/>
+            <Image alt=""/>
         </div>
         <div>
             <form className={styles.form}>
