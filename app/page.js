@@ -35,7 +35,7 @@ export default function Home() {
       />
 
       <h2>I am open to collaboration...</h2>
-      <Button name={`Let's collaborate`} />
+      <Button name={`Let&apos;s collaborate`} />
     </div>
   )
 }
