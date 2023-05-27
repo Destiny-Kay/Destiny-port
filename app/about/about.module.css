@@ -3,6 +3,7 @@
     justify-content: center;
     width: 75%;
     margin: auto;
+    margin-top: 10vh;
 }
 .gradientBorder{
     border-radius: 30px;

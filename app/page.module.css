@@ -27,13 +27,15 @@
 /*refine above css*/
 .hero{
   display: flex;
-  height: 90vh;
+  height: 100vh;
 }
 .herosection{
   display: inline-block;
-  width: 50%;display: flex;
+  width: 50%;
+  display: flex;
   flex-direction: column;
   justify-content: center;
+  z-index: -1;
 }
 .heroContainer{
   width: 80%;
@@ -43,7 +45,20 @@
   font-size: 1.5rem;
 }
 .herotextLarge{
-  font-size: 2.3rem;
+  font-size: 2rem;
+}
+.textLeft{
+  margin-bottom: 15vh;
+}
+/* TEMPORARY */
+/* .heroCirlces{
+  position: absolute;
+  top: 40vh;
+  left: -30vw
+} */
+/* ---------- */
+.wavingHand{
+  margin-left: 35vw;
 }
 @media (width: 768) {
   .herotextLarge{

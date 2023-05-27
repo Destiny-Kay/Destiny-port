@@ -13,3 +13,7 @@
     right: 40%;
     margin: 20px;
 }
+.buttonElement:hover{
+    color: #2FEA36;
+    background-color: #8892B0;
+}
