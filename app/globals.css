@@ -22,12 +22,15 @@ a {
   text-decoration: none;
 }
 ::-webkit-scrollbar{
-  width: 20px;
+  width: 10px;
 }
 ::-webkit-scrollbar-track{
-  background: #09316d60;
+  background: #0A192F;
 }
 ::-webkit-scrollbar-thumb{
   background: #8892B0;
   border-radius: 2rem;
+}
+::-webkit-scrollbar-thumb:hover{
+  background: #43454b;
 }

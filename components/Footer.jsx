@@ -1,13 +1,14 @@
 import Image from "next/image";
 import Button from "./Button"
 import styles from "./components.module.css"
+import image from "../public/Exclude.svg"
 
 export default function Footer(){
     return(
         <>
-        <div> 
-            <Image alt=""/>
-            <Image alt=""/>
+        <div className={styles.paperPlanes}> 
+            <Image src={image} alt="image footer"/>
+            <Image src={image} alt="image footer"/>
         </div>
         <div>
             <form className={styles.form}>

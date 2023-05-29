@@ -4,18 +4,12 @@ import ProjectsContainer from "../../components/ProjectsContainer"
 import Circle from "../../components/Circle"
 import Image from "next/image"
 import winkingFace from "../../public/winking_face.png"
-//TODO:: import project data from DB
+import {projects} from '../../data/projects'
 
 export default function Dashboard(){
-    const projectContent={
-        title: 'Music sharing App',
-        briefDescription: 'This is a music sharing application that was designed for music enthusiast',
-        projectType: 'design'
-    }
-    const mockSnaps="snaps here"
 
     return(
-        <div className={`${styles.container} ${styles.vw}`}>
+        <div className={`${styles.container} `}>
             <div className={styles.containerHero}>
                 <h1 className={styles.largeText}>Explore my creative space</h1>
                 <Circle radius="113px" bgColor="#F50B8A" top="40vh" left="40vw" />
@@ -25,9 +19,19 @@ export default function Dashboard(){
                     <span style={{color: "#F50B8A" }}>U</span>X + CO<span style={{color: "#F50B8A"}}>DEstiny</span>
                 </h1>
             </div>
-            <ProjectsContainer projectSnaps={mockSnaps} projectContent={projectContent}/>
+
+                {
+                projects.map((project) => (
+                    <ProjectsContainer 
+                        key={project.id}
+                        image={project.image} 
+                        title={project.title}
+                        description={project.description} 
+                        githuburl={project.githuburl}
+                        projectUrl={project.projecturl}
+                    />
+                )
+                )}
         </div>
-
-
     )
 }
