@@ -30,7 +30,6 @@
   height: 100vh;
 }
 .herosection{
-  display: inline-block;
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -50,12 +49,6 @@
 .textLeft{
   margin-bottom: 15vh;
 }
-/* TEMPORARY */
-/* .heroCirlces{
-  position: absolute;
-  top: 40vh;
-  left: -30vw
-} */
 /* ---------- */
 .wavingHand{
   margin-left: 35vw;
@@ -63,5 +56,39 @@
 @media (width: 768) {
   .herotextLarge{
     font-size: 1.5rem;
+  }
+}
+/* RESPONSIVE DESIGN */
+@media only screen and (max-width: 768px){
+  .hero{
+    display: inline-block;
+    height: 100vh;
+  }
+  .herosection{
+    display: block;
+    width: 100VW;
+    justify-content: center;
+    z-index: -1;
+    margin: auto;
+    text-align: center;
+  }
+  .image{
+    margin-top: 20vh;
+    width: 30%;
+    height: 30%;
+  }
+  .intro{
+    font-size: 1rem;
+    margin-bottom: 10vh;
+  }
+  .herotextSmall{
+    font-size: 1rem;
+  }
+  .herotextLarge{
+    font-size: 2rem;
+  }
+  .textLeft{
+    margin-left: 25%;
+    text-align: left;
   }
 }

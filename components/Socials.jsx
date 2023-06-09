@@ -8,6 +8,7 @@ import styles from "./components.module.css"
 import Link from "next/link"
 
 export default function Socials (){
+
     return(
         <div className={styles.iconsContainer}>
             <Link href="https://github.com/Destiny-Kay" target="/">

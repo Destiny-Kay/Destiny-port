@@ -3,7 +3,6 @@ import Link from "next/link"
 import styles from "./components.module.css"
 import GitHubIcon from "@mui/icons-material/GitHub"
 import Image from 'next/image'
-// import photo from '../public/winking_face.png'
 
 export default function ProjectsContainer({image,title,description,githuburl,projectUrl}){
     return(

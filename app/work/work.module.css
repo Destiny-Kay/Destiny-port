@@ -20,3 +20,17 @@
     left: 45%;
     top: 31%;
 }
+@media screen and (max-width: 1188px) {
+    .largeText{
+        font-size: 3rem;
+    }
+}
+@media only screen and (max-width: 768px){
+    .container{
+        width: 100%;
+        margin: auto;
+    }
+    .largeText{
+        font-size: 3rem;
+    }
+}

@@ -5,6 +5,7 @@ import Circle from "../../components/Circle"
 import Image from "next/image"
 import winkingFace from "../../public/winking_face.png"
 import {projects} from '../../data/projects'
+import Link from "next/link"
 
 export default function Dashboard(){
 
@@ -22,16 +23,19 @@ export default function Dashboard(){
 
                 {
                 projects.map((project) => (
-                    <ProjectsContainer 
-                        key={project.id}
-                        image={project.image} 
-                        title={project.title}
-                        description={project.description} 
-                        githuburl={project.githuburl}
-                        projectUrl={project.projecturl}
-                    />
+                    <Link href={{pathname: `/work/${project.title}`, query: {name: project.title}}}>
+                            <ProjectsContainer 
+                                key={project.id}
+                                image={project.image} 
+                                title={project.title}
+                                description={project.description} 
+                                githuburl={project.githuburl}
+                                projectUrl={project.projecturl}
+                            /> 
+                    </Link>
                 )
                 )}
+                <h2>More projects coming...</h2>
         </div>
     )
 }

@@ -3,29 +3,38 @@ import Link from "next/link"
 import styles from './components.module.css'
 import Image from "next/image"
 import logo from "../public/Destiny.svg"
-import {gsap} from 'gsap/dist/gsap'
-import { useIsomorphicLayoutEffect } from "@/helpers/isomorphicEffect"
-import {useRef} from 'react'
+import { useState } from "react"
+import { usePathname } from "next/navigation"
 
 export default function Navbar(){
+    const [open, setOpen] = useState(false)
 
-    const nav = useRef(null)
-    const tl = useRef(null)
+    function toggleClass (){
+            setOpen(prev => !prev)
+    }
 
-    useIsomorphicLayoutEffect(() => {
-        gsap.context(() => {
-            gsap.from("nav", {
-                y: "-100%",
-                opacity: 0
-            })                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
-        }, nav)
-    }, [])
+    const pathname = usePathname()
+
     return(
-        <header className={styles.navbarContainer} ref={nav}>
-                <Link href="/"><Image alt="logo" src={logo} width="100" height="70"/></Link>
-            <nav className={styles.navLinks}>
-                <Link href="/work">Work</Link>
-                <Link href="/about">About</Link>
+        <header className={styles.header}>
+            <Link href="/"><Image alt="logo" src={logo} width="100" height="70" /></Link>
+            <div className={`${styles.hamburger}`} onClick={toggleClass}>
+                <div className={styles.line}></div>
+                <div className={styles.line}></div>
+                <div className={styles.line}></div>
+            </div>
+            <nav className={`${styles.navLinks} ${open && styles.open}`}>
+                <ul className={ open && styles.showLinks}>
+                    <li>
+                        <Link href="/" className= {`${styles.navLinkItem} ${pathname === "/" && styles.active}`} >Home</Link>
+                    </li>
+                    <li>
+                        <Link href="/work" className={`${styles.navLinkItem} ${pathname === "/work" && styles.active}`}>Work</Link>
+                    </li>
+                    <li>
+                        <Link href="/about" className={`${styles.navLinkItem} ${pathname === "/about" && styles.active}`}>About</Link>
+                    </li>
+                </ul>
             </nav>
         </header>
     )
