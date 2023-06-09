@@ -15,9 +15,9 @@ export default function Footer(){
 
         emailjs.sendForm(
                 'maildestiny', 
-                keys.TEMPLATE_ID, 
-                form.current, 
-                keys.PUBLIC_KEY)
+                "template_t0710l4", 
+                form.current,
+                "0ASs0dGNarwZbDP7w")
             .then((result) => {
                 alert("Message sent, I will get back to you", result.text)
             }, (error) => {
