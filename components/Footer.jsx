@@ -35,7 +35,7 @@ export default function Footer(){
         </div>
         <div>
             <form className={styles.form} onSubmit={sendEmail} ref={form}>
-                <h3 className={styles.centerText}>Have anything in mind? Let's work on it</h3>
+                <h3 className={styles.centerText}>Have anything in mind? Let&apos;s work on it</h3>
                 <p className={styles.formLabel}>Your name</p>
                 <input name= "name" type="text" placeholder="Your name" required className={styles.input}/>
                 <p className={styles.formLabel}>Email</p>

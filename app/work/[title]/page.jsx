@@ -42,7 +42,7 @@ export default function Page({params}){
                 <h3 className={styles.projectTitle}>A few changes made to fine tune the design</h3>
                 <Image src={projectInfo[projectName].designIterations} alt='possible solutions Image' width={800} height={500} className={styles.imageStyling}/>
                 {/* <h1 className={styles.projectTitle}>WHAT CHANGED?</h1> */}
-                <p>That's all for now</p>
+                <p>That&apos;s all for now</p>
                 <Link href="/work" className={styles.link}>View other projects</Link> 
             </div>
         </>

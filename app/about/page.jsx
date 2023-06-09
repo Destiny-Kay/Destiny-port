@@ -17,7 +17,7 @@ export default function About (){
                     I am Destiny, a web designer and developer based in Nairobi. I am a passionate 
                     designer and I love exploring my creativity through design. My designing journey dates back to my childhood
                     when I used to redraw cartoons that I had watched. I love seeing exceptionally good designs 
-                    all around me. Coding and solving problems with code is something that makes me super happy except when there's a bug &#128027;: .. 
+                    all around me. Coding and solving problems with code is something that makes me super happy except when there&apos;s a bug &#128027;: .. 
                     I also read a lot on artificial intelligence and philosophy ...Meh.
                     I enjoy my work and I am always yearning to creating new and exciting experiences for people on the web.
                 </p>

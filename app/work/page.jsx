@@ -23,7 +23,7 @@ export default function Dashboard(){
 
                 {
                 projects.map((project) => (
-                    <Link href={{pathname: `/work/${project.title}`, query: {name: project.title}}}>
+                    <Link href={{pathname: `/work/${project.title}`, query: {name: project.title}}} key={project.id}>
                             <ProjectsContainer 
                                 key={project.id}
                                 image={project.image} 

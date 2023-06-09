@@ -8,7 +8,7 @@ export default function ProjectsContainer({image,title,description,githuburl,pro
     return(
         <div className={styles.projectContainer}>
             <div className={styles.projectImage}>
-                <img alt="project image" src={image} className={styles.projectImage} width={100} height={100}/>
+                <Image alt="project image" src={image} className={styles.projectImage} width={100} height={100}/>
             </div>
             <div className={styles.projectDescription}>
                 <h4>{title}</h4>
