@@ -4,7 +4,7 @@ import styles from "./components.module.css"
 import image from "../public/Exclude.svg"
 import {useRef} from 'react'
 import emailjs from '@emailjs/browser'
-import apikeys from "@/apikeys";
+import apikeys from "/apikeys";
 
 export default function Footer(){
     const form = useRef(null)
@@ -20,6 +20,7 @@ export default function Footer(){
             .then((result) => {
                 alert("Message sent, I will get back to you", result.text)
             }, (error) => {
+                alert("An error occured while sending the email, if this persists email me directly:: destinykevogo@gmail.com")
                 console.log(error.text)
             })
             e.target.reset()
