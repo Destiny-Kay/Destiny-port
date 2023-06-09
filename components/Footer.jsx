@@ -4,7 +4,8 @@ import styles from "./components.module.css"
 import image from "../public/Exclude.svg"
 import {useRef} from 'react'
 import emailjs from '@emailjs/browser'
-import apikeys from "/apikeys";
+import {keys} from "/data/apikeys"
+
 
 export default function Footer(){
     const form = useRef(null)
@@ -14,9 +15,9 @@ export default function Footer(){
 
         emailjs.sendForm(
                 'maildestiny', 
-                apikeys.TEMPLATE_ID, 
+                keys.TEMPLATE_ID, 
                 form.current, 
-                apikeys.PUBLIC_KEY)
+                keys.PUBLIC_KEY)
             .then((result) => {
                 alert("Message sent, I will get back to you", result.text)
             }, (error) => {
