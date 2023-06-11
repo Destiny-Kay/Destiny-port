@@ -2,10 +2,17 @@
 import Link from "next/link"
 import styles from './components.module.css'
 import Image from "next/image"
-import logo from "../public/Destiny.svg"
 import { useState } from "react"
 import { usePathname } from "next/navigation"
+import {Island_Moments} from 'next/font/google'
 
+const islandMoments = Island_Moments(
+    {
+        subsets: ["latin"],
+        weight: ["400"],
+        display: 'swap'
+    }
+)
 export default function Navbar(){
     const [open, setOpen] = useState(false)
 
@@ -17,14 +24,14 @@ export default function Navbar(){
 
     return(
         <header className={styles.header}>
-            <Link href="/"><Image alt="logo" src={logo} width="100" height="70" /></Link>
+            <Link href="/"><span className={`${islandMoments.className} ${styles.logo}`}>Destiny</span></Link>
             <div className={`${styles.hamburger}`} onClick={toggleClass}>
                 <div className={styles.line}></div>
                 <div className={styles.line}></div>
                 <div className={styles.line}></div>
             </div>
             <nav className={`${styles.navLinks} ${open && styles.open}`}>
-                <ul className={ open && styles.showLinks}>
+                <ul className={open && styles.showLinks}>
                     <li>
                         <Link href="/" className= {`${styles.navLinkItem} ${pathname === "/" && styles.active}`} >Home</Link>
                     </li>

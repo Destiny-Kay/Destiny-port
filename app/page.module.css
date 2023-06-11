@@ -53,6 +53,20 @@
 .wavingHand{
   margin-left: 35vw;
 }
+.designStratTitle{
+  text-align: center;
+  color: #635d5d;
+  font-weight: 700;
+  font-size: 5rem;
+  -webkit-text-stroke: 2px #15A1EF;
+  margin-bottom: 5rem;
+}
+.textBlue{
+  color: #15A1EF;
+}
+.bottomText{
+  text-align: center;
+}
 @media (width: 768) {
   .herotextLarge{
     font-size: 1.5rem;

@@ -8,6 +8,7 @@ import Button from "../components/Button"
 import {gsap} from 'gsap/dist/gsap' //importing gsap
 import { useRef, useLayoutEffect } from 'react'
 import Circle from '../components/Circle'
+import DesignStrat from '../components/DesignStrat'
 
 export default function Home() {
 
@@ -76,12 +77,44 @@ export default function Home() {
                     my name is Destiny and I design and develop websites. Thank you for coming this far, 
                     I appreciate your effort in scrolling down. Anyway I love designing and developing intuitive 
                     and friendly user experiences on the web, I do that with passion. I make clean and friendly designs. 
-                    I have experience in developing full stack web applications.
+                    I have experience in developing full stack web applications, I am currently focusing on user experience
+                     designing.
         `} 
       />
+      <div>
+        <h1 className={styles.designStratTitle}>My design strategy</h1>
+        <DesignStrat 
+          title="Deeply understanding the deliverables"
+          content="One of the most important things that I take into consideration when redesigning or 
+            making new designs is understanding what the end goals for the specified project are. 
+            Goals set me up for success, they reduce chances of missing the most important aspects of 
+            a design."
+          imageSrc="./images/brain.svg"
+        />
 
-      <h2>I am open to collaboration...</h2>
-      <Button name={`Let's collaborate`} />
+        <DesignStrat 
+          title="Testing"
+          content="Testing my designs and development work is one thing I
+           never take for granted. I test as soon as I start adding features to 
+           designs and development work. User feedback is the most important thing in design since they
+            are the same people who&apos;ll use the product."
+          imageSrc="./images/test.svg"
+        />
+
+        <DesignStrat 
+          title="Collaboration"
+          content="Deeply rooted in my design journey is incorporating amazing ideas that I get from others. 
+          This could be fellow designers, the client or the users of the product being developed. 
+          These ideas end up being amazing and serve their intended purpose."
+          imageSrc="./images/crowd.svg"
+        />
+      </div>
+      <span className={styles.bottomText}>
+        <h2 className={styles.textBlue}>Valhalla,&#128515; let&apos;s get things rolling.</h2>
+        <h4>Let me turn that crazy idea into an amazing practical design.</h4>
+
+        <h2>I am open to collaboration...</h2>
+      </span>
     </div>
   )
 }

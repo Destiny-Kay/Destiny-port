@@ -4,7 +4,7 @@ export const projects = [
         description:`
             A peer to peer music sharing application 
             that allows users to listen to and share music with friends and family.`,
-        image:'/images/music_app.png',
+        image:'/images/music_app.svg',
         id: 0,
     },
     {
@@ -12,7 +12,7 @@ export const projects = [
         description:`An online shopping experience for a hair products shop. 
             Creating an easy to navigate and customer centric application.
             `,
-        image: '/images/hairlim.png',
+        image: '/images/hairlim.svg',
         id: 1
     },
     // {
